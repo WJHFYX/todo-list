@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>极简待办清单</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1 class="title">待办清单</h1>
+
+    <div class="input-row">
+      <input
+        type="text"
+        id="todo-input"
+        class="todo-input"
+        placeholder="输入待办事项，按回车添加"
+        maxlength="100"
+        autocomplete="off"
+      />
+      <button type="button" id="add-btn" class="add-btn">添加</button>
+    </div>
+
+    <ul id="todo-list" class="todo-list"></ul>
+    <p id="empty-hint" class="empty-hint" hidden>还没有任务，添加一个吧～</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
